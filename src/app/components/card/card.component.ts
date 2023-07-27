@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Item } from 'src/app/models/item.model';
 @Component({
   selector: 'app-card',
@@ -8,4 +8,11 @@ import { Item } from 'src/app/models/item.model';
 export class CardComponent {
   @Input()
   item!: Item
+
+  // @Output()
+  // newItem = new EventEmitter<Item>();
+
+  // add(item: Item){
+  //   this.newItem.emit(item);
+  // }
 }

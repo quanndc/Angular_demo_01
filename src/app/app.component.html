@@ -1,3 +1,3 @@
 <app-form [listItems]="listItems"></app-form>
-<app-card *ngFor="let item of listItems" [item]="item"></app-card>
+<app-card *ngFor="let item of listItems" [item]="item" (click)="addToCart(item)"></app-card>
 <!-- <button (click)="show()">Show</button> -->

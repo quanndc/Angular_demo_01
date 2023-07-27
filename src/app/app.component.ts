@@ -41,7 +41,16 @@ export class AppComponent {
       price: 100,
       quantity: 1,
       description: 'Description 1',
+
     },
   ];
+
+
+  cart:Item[] = [];
+
+  addToCart(item:Item){
+    this.cart.push(item);
+    console.log(this.cart);
+  }
 
 }
